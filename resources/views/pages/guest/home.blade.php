@@ -201,10 +201,11 @@
                <iframe id="video" style="width: 100%; aspect-ratio: 16/9;border-radius: 20px;"
                   src="https://www.youtube.com/embed/HwEka4xz_sc?si=CmyRGMEnqkhj76aO" title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in- pictureBox; web-share"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                </iframe>
             </div>
+
             <div class="">
                <h1 class="mt-0 mt-md-2 mb-0 p-0 res-text-h1 text-white" style="font-family: 'Burger Kids', sans-serif;">
                   Kegiatan
