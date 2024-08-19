@@ -57,7 +57,8 @@
                                  </div>
                               </div>
                            </div>
-                           <button type="submit" class="btn me-2" style="background:  #71BC53;color:white">Simpan</button>
+                           <button type="submit" class="btn me-2 "
+                              style="background:  #71BC53;color:white">Simpan</button>
                            {{-- <button class="btn btn-light">Cancel</button> --}}
                         </form>
                      </div>
@@ -83,7 +84,7 @@
                            </div>
                         </div>
                      @elseif ($result['condition'] == 'Pendek')
-                        <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="col-md-6 mt-4 mt-md-0 px-1">
                            <div class="containerkotak position-relative mt-4 mt-md-0 mx-2 mx-xl-0">
                               <img src="{{ asset('storage/image/kuning.png') }}" style="width: 35%" alt="">
                               <div class="info mt-4">
@@ -104,7 +105,7 @@
                            </div>
                         </div>
                      @elseif ($result['condition'] == 'Normal')
-                        <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="col-md-6 mt-4 mt-md-0 px-1">
                            <div class="containerkotak position-relative mt-4 mt-md-0 mx-2 mx-xl-0">
                               <img src="{{ asset('storage/image/hijau.png') }}" style="width: 35%" alt="">
                               <div class="info mt-4">
@@ -125,7 +126,7 @@
                            </div>
                         </div>
                      @elseif ($result['condition'] == 'Tinggi')
-                        <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="col-md-6 mt-4 mt-md-0 px-1">
                            <div class="containerkotak position-relative mt-4 mt-md-0 mx-2 mx-xl-0">
                               <img src="{{ asset('storage/image/biru.png') }}" style="width: 35%" alt="">
                               <div class="info mt-4">
@@ -146,7 +147,7 @@
                            </div>
                         </div>
                      @else
-                        <div id="resultContainer" class="col-md-6 mt-4 mt-md-0">
+                        <div id="resultContainer" class="col-md-6 mt-4 mt-md-0 px-1">
                            <div class="containerkotak position-relative mt-4 mt-md-0 mx-2 mx-xl-0">
                               <img src="{{ asset('storage/image/merah.png') }}" style="width: 35%" alt="">
                               <div class="info mt-4">
@@ -165,24 +166,6 @@
 
                         </div>
                      @endif
-
-                     {{-- <div id="resultContainer" class="col-md-6 mt-4 mt-md-0">
-                        <div class="containerkotak position-relative mt-4 mt-md-0 mx-2 mx-xl-0">
-                           <img src="{{ asset('storage/image/merah.png') }}" style="width: 35%" alt="">
-                           <div class="info mt-4">
-                              <div class="info-item left-rounded" style="background-color: #E84C42">
-                                 <p class="value">{{ $height . ' Cm' }}</p>
-                              </div>
-                              <div class="info-putih">I </div>
-                              <div class="info-item right-rounded" style="background-color: #E84C42">
-                                 <p class="status">{{ $result['condition'] ?? '' }} </p>
-                              </div>
-                           </div>
-                           <p class="message fw-semibold">Isi form untuk melihat kondisi anak anda</p>
-                           <p class="note position-absolute bottom-0 end-0 mb-0 ">*Data berdasarkan Z Score WHO </p>
-                        </div>
-
-                     </div> --}}
                   </div>
                </div>
             </div>

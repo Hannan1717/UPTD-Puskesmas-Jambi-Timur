@@ -48,29 +48,9 @@
          font-style: normal;
       }
 
-      /* label {
-         color: #65a7c7;
-         margin-bottom: 8px;
+      .page-title .page-title-icon {
+         box-shadow: 0px 3px 8.3px 0.7px rgba(52, 192, 248, 0.35);
       }
-
-      input[type="text"] {
-         border: 2px solid #65a7c7;
-         border-radius: 25px;
-         outline: none;
-      }
-
-      input[type="date"] {
-         border: 2px solid #65a7c7;
-         border-radius: 25px;
-         outline: none;
-      }
-
-      input[type="decimal"] {
-         border: 2px solid #65a7c7;
-         border-radius: 25px;
-         outline: none;
-      } */
-
 
       /* kotak hasil calculator */
       .form-check .form-check-label input[type="radio"]:checked+.input-helper:before {

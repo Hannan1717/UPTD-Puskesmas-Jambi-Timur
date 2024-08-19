@@ -1,96 +1,111 @@
 @extends('layouts.guest')
 
 @section('content')
-   <div id="carouselExample" class="carousel slide z-1">
-      <div class=" carousel-inner">
-         <div class="carousel-item active bg-custom" style="background-color: #45A3C7; ">
-            <div class="row mx-0 mx-xl-5 px-3 px-xl-5  text-white d-flex align-items-start align-items-xl-center boxtext">
-               <div class="col-md-6">
-                  <h1 class="responsive-heading" style="font-family: 'Burger Kids', sans-serif;">
-                     KELUARGA HEBAT
-                     <br> UNTUK BUAH HATI
-                     <br>YANG SEHAT
-                  </h1>
-                  <p class="fw-light responsive-text">Mari para ibu untuk mengenal lebih <br
-                        class="d-block d-block d-xl-none"> jauh
-                     tentang stunting
-                     agar
-                     anak-anak <br class="d-block d-block d-xl-none"> kita tumbuh menjadi anak <br
-                        class="d-block d-block d-xl-none"> yang sehat dan
-                     pintar.</p>
+   <div class="position-relative">
+      <div id="carouselExample" class="carousel slide z-1">
+         <div class=" carousel-inner">
+            <div class="carousel-item active bg-custom" style="background-color: #45A3C7; ">
+               <div
+                  class="row mx-0 mx-xl-5 px-3 px-xl-5  text-white d-flex align-items-start align-items-xl-center boxtext">
+                  <div class="col-md-6">
+                     <h1 class="responsive-heading" style="font-family: 'Burger Kids', sans-serif;">
+                        KELUARGA HEBAT
+                        <br> UNTUK BUAH HATI
+                        <br>YANG SEHAT
+                     </h1>
+                     <p class="fw-light responsive-text">Mari para ibu untuk mengenal lebih <br
+                           class="d-block d-block d-xl-none"> jauh
+                        tentang stunting
+                        agar
+                        anak-anak <br class="d-block d-block d-xl-none"> kita tumbuh menjadi anak <br
+                           class="d-block d-block d-xl-none"> yang sehat dan
+                        pintar.</p>
+                  </div>
                </div>
             </div>
-         </div>
-         <div class="carousel-item" style="background-color: #F7941D; background-image: url('storage/image/qwer.png');">
-            <div class="row mx-0 mx-xl-5 px-3 px-xl-5  text-white py-5 d-flex align-items-center boxtext">
-               <div class="col-md-6">
-                  <h1 class="responsive-headingc2" style="font-family: 'Burger Kids', sans-serif;margin-top:-40px">
-                     GIZI SEIMBANG
-                     <br class="mobile-hide">UNTUK ANAK
-                  </h1>
-                  <p class="fw-light responsive-text " style="margin-top: -10px">Stunting masih bisa diatasi dengan
-                     memberikan nutrisi yang lengkap
-                     dan sesuai anjuran dokter. Beberapa nutrisi penting untuk anak stunting, di antaranya ada Karbohidrat,
-                     Protein dan Lemak.</p>
+            <div class="carousel-item " style="background-color: #F7941D; ">
+               <div class="d-flex justify-content-center">
+                  <img src="{{ asset('storage/image/Group 15.svg') }}" class="d-sm-none mt-3" style="width: 82%"
+                     alt="...">
                </div>
-               <div class="col-md-6 d-flex flex-column justify-content-center align-items-center"
-                  style="margin-top: -140px">
-                  <h2 class="responsive-heading2" style="font-family: 'Burger Kids', sans-serif;">
-                     MACRONUTRIENTS
-                  </h2>
-                  <img src="{{ asset('storage/image/imgc2.png') }}" class="imgc2" alt="">
+               <div class="row mx-0 mx-xl-5 px-3 px-xl-5  text-white py-5 d-flex align-items-center boxtext hideitem2-hp">
+                  <div class="col-md-6">
+                     <h1 class="responsive-headingc2 d-block d-none d-xl-block"
+                        style="font-family: 'Burger Kids', sans-serif;margin-top:-40px">
+                        GIZI SEIMBANG
+                        <br class="mobile-hide">UNTUK ANAK
+                     </h1>
+                     <p class="fw-light responsive-text d-block d-none d-xl-block" style="margin-top: -10px">Stunting masih
+                        bisa diatasi dengan
+                        memberikan nutrisi yang lengkap
+                        dan sesuai anjuran dokter. Beberapa nutrisi penting untuk anak stunting, di antaranya ada
+                        Karbohidrat,
+                        Protein dan Lemak.</p>
+                  </div>
+                  <div class="col-md-6 d-flex flex-column justify-content-center align-items-center "
+                     style="margin-top: -110px">
+                     <h2 class="responsive-heading2" style="font-family: 'Burger Kids', sans-serif;">
+                        MACRONUTRIENTS
+                     </h2>
+                     <img src="{{ asset('storage/image/imgc2.png') }}" class="imgc2" alt="">
+                  </div>
                </div>
             </div>
-         </div>
 
-         <div class="carousel-item" style="background-color: #71BC53; background-image: url('storage/image/qwer2.png');"
-            id="Backgroundbayi">
-            <div class="row mx-0 mx-xl-5 px-3 px-xl-5  text-white py-5 d-flex align-items-center boxtext">
-               <h1 class="responsive-headingc4 text-center text-xl-start"
-                  style="font-family: 'Burger Kids', sans-serif;margin-top:-40px">
-                  1 TAHUN TAHAP
-                  <br class="mobile-hide"> TUMBUH KEMBANG SI KECIL
-               </h1>
-               <img src="{{ asset('storage/image/bayi.png') }}" class="imgc4 mx-auto d-block d-none d-xl-block"
-                  alt="Bayi">
-               <img src="{{ asset('storage/image/Bayi Atas.svg') }}" class="imgc4 mx-auto d-block d-block d-xl-none"
-                  alt="Bayi Atas">
-               <img src="{{ asset('storage/image/bayi Bawah.svg') }}" class="imgc4 mx-auto d-block d-block d-xl-none"
-                  alt="Bayi Bawah">
-            </div>
-         </div>
-         {{-- <div class="carousel-item ">
-            <div class="row mx-0 mx-xl-5 px-3 px-xl-5  text-white py-5 d-flex align-items-center boxtext">
-               <img src="{{ asset('storage/image/cr3.png') }}" alt="">
-            </div>
-         </div> --}}
-
-         <div class="carousel-item " style="background-color: #E84C42;">
-            <div class="row mx-0 mx-xl-5 px-3 px-xl-5  text-white py-5 d-flex align-items-center boxtext">
-               <div class="col-md-6">
-                  <h1 class="responsive-headingc3" style="font-family: 'Burger Kids', sans-serif;margin-top:-40px">
-                     KENALI CIRI-CIRI
-                     <br class="mobile-hide">ANAK STUNTING
-                  </h1>
-                  <p class="fw-light responsive-text " style="margin-top: -10px">Kenali ciri-ciri anak stunting dari gambar
-                     berikut ini. Ada 5 tanda yang dapat dijadikan indikasi bahwa anak anda stunting.</p>
+            <div class="carousel-item" style="background-color: #71BC53; background-image: url('storage/image/qwer2.png');"
+               id="Backgroundbayi">
+               <div class="d-flex justify-content-center">
+                  <img src="{{ asset('storage/image/Group 18.svg') }}" class="d-sm-none mt-4"
+                     style="width: 90%;height:auto;" alt="...">
                </div>
-               <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-                  <img src="{{ asset('storage/image/cr4.png') }}" class="imgc3" alt="">
+               <div class="row mx-0 mx-xl-5 px-3 px-xl-5  text-white py-5 d-flex align-items-center boxtext hideitem2-hp">
+                  <h1 class="responsive-headingc4 text-center text-xl-start"
+                     style="font-family: 'Burger Kids', sans-serif;margin-top:-40px">
+                     1 TAHUN TAHAP
+                     <br class="mobile-hide"> TUMBUH KEMBANG SI KECIL
+                  </h1>
+                  <img src="{{ asset('storage/image/bayi.png') }}" class="imgc4 mx-auto d-block d-none d-xl-block"
+                     alt="Bayi">
+                  <img src="{{ asset('storage/image/Bayi Atas.svg') }}" class="imgc4 mx-auto d-block d-block d-xl-none"
+                     alt="Bayi Atas">
+                  <img src="{{ asset('storage/image/Bayi Bawah.svg') }}" class="imgc4 mx-auto d-block d-block d-xl-none"
+                     alt="Bayi Bawah">
+               </div>
+            </div>
+
+            <div class="carousel-item " style="background-color: #E84C42;">
+               <div class="d-flex justify-content-center">
+                  <img src="{{ asset('storage/image/Group 16.svg') }}" class="d-sm-none mt-4"
+                     style="width: 82%;height:auto;" alt="...">
+               </div>
+               <div class="row mx-0 mx-xl-5 px-3 px-xl-5  text-white py-5 d-flex align-items-center boxtext hideitem2-hp">
+                  <div class="col-md-6">
+                     <h1 class="responsive-headingc3" style="font-family: 'Burger Kids', sans-serif;margin-top:-40px">
+                        KENALI CIRI-CIRI
+                        <br class="mobile-hide">ANAK STUNTING
+                     </h1>
+                     <p class="fw-light responsive-text " style="margin-top: -10px">Kenali ciri-ciri anak stunting dari
+                        gambar
+                        berikut ini. Ada 5 tanda yang dapat dijadikan indikasi bahwa anak anda stunting.</p>
+                  </div>
+                  <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                     <img src="{{ asset('storage/image/cr4.png') }}" class="imgc3" alt="">
+                  </div>
                </div>
             </div>
          </div>
       </div>
+      <button class="carousel-control-prev z-3" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next z-3" style="margin-left:-10px" type="button" data-bs-target="#carouselExample"
+         data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+      </button>
    </div>
-   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-   </button>
-   <button class="carousel-control-next" style="margin-left:-10px" type="button" data-bs-target="#carouselExample"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-   </button>
+
 
    {{-- ombak atas --}}
 
@@ -120,7 +135,8 @@
                @csrf
                <div class="mb-3">
                   <label for="formGroupExampleInput" class="form-label">Nama Ibu*</label>
-                  <input type="text" required class="form-control" name="mother_name" id="mother_name" placeholder="">
+                  <input type="text" required class="form-control" name="mother_name" id="mother_name"
+                     placeholder="">
                </div>
                <div class="mb-3">
                   <label for="formGroupExampleInput" class="form-label">Nama Anak*</label>
@@ -129,9 +145,14 @@
                </div>
                <div class="mb-3">
                   <label for="formGroupExampleInput2" class="form-label">Tanggal Lahir*</label>
+                  <?php
+                  // Hitung tanggal minimum (5 tahun yang lalu dari hari ini)
+                  $minDate = date('Y-m-d', strtotime('-5 years'));
+                  ?>
                   <input type="date" required class="form-control" name="birthdate" id="birthdate"
-                     max="{{ date('Y-m-d') }}">
+                     min="{{ $minDate }}" max="{{ date('Y-m-d') }}">
                </div>
+
                <div class="mb-3">
                   <label for="formGroupExampleInput2" class="form-label">Panjang Badan Cm (posisi
                      telentang*)</label>
@@ -199,7 +220,7 @@
          <div class="d-flex flex-column">
             <div class="">
                <iframe id="video" style="width: 100%; aspect-ratio: 16/9;border-radius: 20px;"
-                  src="https://www.youtube.com/embed/HwEka4xz_sc?si=CmyRGMEnqkhj76aO" title="YouTube video player"
+                  src="https://www.youtube.com/embed/RH9zOxSGoHg?si=eTPtGH8UjAl0aHAv" title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>

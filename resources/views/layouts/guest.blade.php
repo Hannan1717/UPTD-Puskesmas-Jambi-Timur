@@ -92,6 +92,15 @@
 
       @media (max-width: 576px) {
 
+         .bg2res {
+            background-image: url('storage/image/bg2hp.png');
+            justify-content: center;
+            align-self: center;
+         }
+
+         .hideitem2-hp {
+            display: none !important;
+         }
 
          #Backgroundbayi {
             background-image: none !important;
@@ -135,7 +144,7 @@
          }
 
          .imgc4 {
-            margin-top: -120px;
+            margin-top: -80px;
             width: 85vw;
          }
 
@@ -206,7 +215,7 @@
          }
 
          .responsive-headingc2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
          }
 
          .responsive-headingc3 {
@@ -812,6 +821,10 @@
             background-image: url('storage/image/carausel1.png');
          }
 
+         .bg2res {
+            background-image: url('storage/image/qwer.png');
+         }
+
       }
 
 
@@ -828,7 +841,7 @@
 <body style="background-color: rgb(242, 242, 242)">
    <nav class="navbar navbar-expand-lg bg-body-tertiary z-3">
       <div class="container">
-         <a class="navbar-brand" href="#">
+         <a class="navbar-brand" href="{{ route('home') }}">
             <img src="{{ asset('/storage/image/gizi.png') }}" alt="Bootstrap" width="100%" height="30px">
          </a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -890,7 +903,7 @@
                   </div>
                   <div style="min-width: 100px">
                      <li class="nav-item"><a href="#" class="nav-link p-0"
-                           style="color: white; font-weight: 300;">: +628117452911</a></li>
+                           style="color: white; font-weight: 300;">: +6285266621991</a></li>
                   </div>
                </div>
             </ul>
