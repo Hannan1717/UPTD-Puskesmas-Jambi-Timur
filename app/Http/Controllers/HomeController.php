@@ -59,7 +59,7 @@ class HomeController extends Controller
             $article->excerpt = $this->extractTextFromHtml($article->content);
 
             // Memformat tanggal publikasi artikel
-            $article->formatted_date = Carbon::parse($article->created_at)
+            $article->formatted_date = Carbon::parse($article->created_at)->setTimezone('Asia/Jakarta')
                 ->locale('id')
                 ->translatedFormat('l, j F Y | H:i');
         }
@@ -84,22 +84,6 @@ class HomeController extends Controller
         $totalMonths = $this->calculateAgeInMonths($birthdate);
         $result = $this->calculateSD($totalMonths, $height, $gender);
 
-        // if (Auth::check() && request()->routeIs('kalkulator.index')) {
-        //     // Simpan data ke dalam tabel stuntings
-        //     Stunting::create([
-        //         'ibu' => $request->input('mother_name'),
-        //         'anak' => $request->input('child_name'),
-        //         'tanggal_lahir' => $birthdate,
-        //         'usia' => $totalMonths,
-        //         'panjang_badan' => $height,
-        //         'kelamin' => $gender,
-        //         'kondisi' => $result['condition'], // Asumsi 'condition' ada di $result
-        //         'deviasi' => $result['result'], // Asumsi 'deviation' ada di $result
-        //     ]);
-
-        //     return view('pages.kalkulator.index', compact('result', 'height'));
-        // return response()->json([$result, $height]);
-        // }
         return response()->json([$result, $height]);
     }
 
@@ -196,14 +180,14 @@ class HomeController extends Controller
 
     public function articleHome()
     {
-        $articles = Article::all();
+        $articles = Article::latest()->get();
 
         foreach ($articles as $article) {
             $article->image = $this->extractImageFromHtml($article->content);
             $article->excerpt = $this->extractTextFromHtml($article->content);
 
             // Memformat tanggal publikasi artikel
-            $article->formatted_date = Carbon::parse($article->created_at)
+            $article->formatted_date = Carbon::parse($article->created_at)->setTimezone('Asia/Jakarta')
                 ->locale('id')
                 ->translatedFormat('l, j F Y | H:i');
         }

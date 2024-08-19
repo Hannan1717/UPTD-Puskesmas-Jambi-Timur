@@ -14,11 +14,7 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
-   <link rel="shortcut icon" href="{{ asset('storage/image/Website-01.png') }}" />
-
-   {{-- <link rel="stylesheet" href="{{ asset('fonts/Burger Kids.otf') }}">
-   <link rel="stylesheet" href="{{ asset('fonts/Burger Kids.ttf') }}"> --}}
-   {{-- <link rel="stylesheet" href="../../resources/fonts/Burger Kids.ttf"> --}}
+   <link rel="icon" href="{{ asset('storage/image/Website-01.png') }}" type="image/png" />
 
    <style>
       @font-face {
@@ -931,19 +927,16 @@
                <img src="{{ asset('/storage/image/Kota Jambi 1.png') }}" style="max-height: 17vh" alt="">
             </div>
             <ul class="nav flex-column mt-2">
-               <li class="nav-item mb-2"><a href="{{ route('home') }}" class="nav-link p-0"
-                     style="color: white; font-weight: 300;">Jl. Taruma Negara RT.12 No.50
+               <li class="nav-item mb-2"><a class="nav-link p-0" style="color: white; font-weight: 300;">Jl. Taruma
+                     Negara RT.12 No.50
                   </a></li>
-               <li class="nav-item mb-2"><a href="{{ route('home') }}" class="nav-link p-0"
-                     style="color: white; font-weight: 300;">
+               <li class="nav-item mb-2"><a class="nav-link p-0" style="color: white; font-weight: 300;">
                      Kelurahan Tanjung Pinang
 
-               <li class="nav-item mb-2"><a href="{{ route('home') }}" class="nav-link p-0"
-                     style="color: white; font-weight: 300;">
+               <li class="nav-item mb-2"><a class="nav-link p-0" style="color: white; font-weight: 300;">
                      Kecamatan Jambi Timur
                   </a></li>
-               <li class="nav-item mb-2"><a href="{{ route('home') }}" class="nav-link p-0"
-                     style="color: white; font-weight: 300;">
+               <li class="nav-item mb-2"><a class="nav-link p-0" style="color: white; font-weight: 300;">
                      Kota Jambi, Jambi</a></li>
             </ul>
          </div>

@@ -235,7 +235,6 @@
                   Stunting
                   Kota
                   Jambi</h1>
-               <p class="fw-light res-text-p">Published - 05 Juli 2024</p>
             </div>
          </div>
       </div>
@@ -251,7 +250,7 @@
                Stunting</h2>
          </div>
          <div
-            class="d-flex flex-column flex-xl-row justify-content-center justify-content-md-between align-items-center mt-4">
+            class="d-flex flex-column flex-xl-row justify-content-center justify-content-md-start gap-1 gap-xl-5 align-items-center mt-4">
             @foreach ($articles as $article)
                <a href="{{ route('home.article.show', $article->slug) }}" class="text-decoration-none">
                   <div class="card mb-2 mb-xl-4 mb-xl-0 cardBerita">
